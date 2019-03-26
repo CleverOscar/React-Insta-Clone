@@ -1,4 +1,30 @@
-.PostContainer {
-  border-top: 5px solid rgba(232, 235, 239,0.7);
-  margin-top: 10px;
+.postContainer {
+  margin: 0 auto;
+  margin-top: 100px;
+  height: auto;
+  width: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+
+.profileImg {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 50px;
+}
+
+.thumbnailUrl {
+  height: 50%;
+  margin-left: 20px;
+  width: auto;
+  border-radius: 25px;
+}
+
+.username {
+  padding-left: 10px;
+}
+
+.imageUrl {
+  width: 100%;
 }

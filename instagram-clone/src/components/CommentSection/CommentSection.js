@@ -1,14 +1,19 @@
 import React from 'react';
 import './CommentSection.css';
 
-class CommentSection extends React.Component {
-  render(){
-    return(
-      <div className="CommentSection">
-        <h1>Comment conainer</h1>
-      </div>
-    )
-  }
+const CommentSection = props => {
+  return <div className="commentSection">
+          {props.comments.map((comment,index) => (
+            <div className="comments" key="index">
+              <p>{comment.username}</p>
+              <p>{comment.text}</p>
+            </div>
+          ))}
+          <form className="commentForm">
+            <input className="commentInput" placeholder="Add a comment..." />
+            <div className="more"> </div>
+          </form>
+        </div>
 }
 
 export default CommentSection;
