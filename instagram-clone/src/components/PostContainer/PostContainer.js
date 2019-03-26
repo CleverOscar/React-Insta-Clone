@@ -5,10 +5,13 @@ import CommentSection from '../CommentSection/CommentSection';
 const PostContainer = props => {
   console.log(props);
     return(
-      <div className="PostContainer">
-        <div> </div>
-        <CommentSection />
-      </div>
+      <>{props.cards.map(posts =>(
+        <div>
+          <p> {posts.username} </p>
+        </div>
+
+      ))}
+      </>
     )
 }
 
