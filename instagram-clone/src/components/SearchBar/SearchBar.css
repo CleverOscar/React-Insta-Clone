@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css?family=Aguafina+Script');
+
+.searchBarContainer {
+  padding-bottom: 20px;
+  padding-top: 10px;
+  border-bottom: 1px solid gray;
+  height: 25px;
+}
+
+.navbar {
+  height: 100%;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+
+.logoImg {
+  background-image: url('https://cdn.vectorlogosupply.com/logos/large/2x/instagram-glyph-1-png-transparent-logo.png');
+  height: 100%;
+  width: 15%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.logoName {
+  width: 10%;
+  font-family: 'Aguafina Script', cursive;
+  font-size: 15px;
+  padding-top: 5px;
+}
+
+.divider {
+  border-left: 1px solid black;
+  height: 20px;
+  margin-left: -40px;
+  margin-right: -20px;
+  padding-right: 30px;
+}
+
+.searchBar {
+  width: 20%;
+  margin-left: auto;
+}
+
+.notifications {
+  width: 30%;
+  margin-left: auto;
+  height: auto;
+}
+
+.heart {
+  background-image: url('https://cdn2.iconfinder.com/data/icons/instagram-ui/48/jee-68-512.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
