@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import logo from './logo.svg'
 import dummyData from './dummy-data'
 import PostContainer from './components/PostContainer/PostContainer'
 
@@ -19,9 +18,12 @@ class App extends Component {
 
   componentDidMount(){
     this.setState({
-      posts: dummyData
-    })
-  };
+      posts: dummyData,
+      isLogin: localStorage.getItem('username') && localStorage.getItem('password'),
+
+    })};
+
+
 
   render() {
     return (
