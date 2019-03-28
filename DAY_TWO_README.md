@@ -24,7 +24,7 @@
 - Get the Search Bar to filter posts by the post's username. When you submit a search term should filter out posts by users whose usernames do not match the search term.
 
 #### Tasks (Day II)
-
+ 
 - Use lifecycle methods
   - In `app.js` use `componentDidMount()` to set your data to the component's state. Use the state object to pass data to your `PostContainer` component.
 - Adding comments

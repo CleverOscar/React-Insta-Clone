@@ -48,7 +48,11 @@
 .notifications {
   width: 30%;
   margin-left: auto;
-  height: auto;
+  height: 25px;
+}
+
+.notifications i {
+  padding-left: 30px;
 }
 
 .heart {

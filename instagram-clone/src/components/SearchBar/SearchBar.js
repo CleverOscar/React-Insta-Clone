@@ -13,7 +13,10 @@ class SearchBar extends React.Component {
           <p className="logoName"> Instagram</p>
           <input className="searchBar" placeholder="search" />
           <div className="notifications">
-            <div className="heart"></div>
+            <i className="far fa-compass fa-lg"> </i>
+            <i className="far fa-heart fa-lg"> </i>
+            <i className="far fa-user fa-lg"> </i>
+
           </div>
         </div>
       </div>

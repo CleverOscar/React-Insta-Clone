@@ -2,23 +2,31 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import dummyData from './dummy-data'
+import PostContainer from './components/PostContainer/PostContainer'
 
-import SearchBar from './components/SearchBar/SearchBar';
-import PostContainer from './components/PostContainer/PostContainer';
+import withAuthenticate from './components/Authentication/withAuthentication'
+
+const ComponentFromWithAuthenticate = withAuthenticate(PostContainer);
 
 class App extends Component {
   constructor(){
     super();
     this.state= {
-      posts: dummyData
+      posts: dummyData,
+      isLogin: false,
     }
   }
+
+  componentDidMount(){
+    this.setState({
+      posts: dummyData
+    })
+  };
+
   render() {
     return (
       <div className="App">
-        <SearchBar />
-
-        <PostContainer dummyData={this.state.posts} />
+        <ComponentFromWithAuthenticate dummyData={this.state.posts} isLogin={this.state.isLogin}/>
       </div>
     );
   }
